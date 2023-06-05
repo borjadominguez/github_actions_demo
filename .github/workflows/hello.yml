@@ -1,13 +1,14 @@
-name : Say Hello
+name: Say hello
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+
 jobs:
-    hello_world:
-        runs-on: ubuntu-20.04 # Podríamos haber puesto ubuntu-latest
-        steps:
-            - name: Echo the message
-              run: 
-                    echo "Hola Equipo!"
+  hello_world:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Echo the message
+        run: |
+          echo "Hola Equipo!"
