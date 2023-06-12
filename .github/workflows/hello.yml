@@ -1,17 +1,23 @@
-name: Say hello
+name: Say hello # Name of the workflow
 
 on:
-  push:
+  push: # Event that triggers the workflow
+        # in this case, when a push is 
+        # made to the repository
     branches:
-      - main
+      - main # Applies only to the main branch
 
 jobs:
   hello_world:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-20.04 # Runs on a Ubuntu enviroment
+                          # we could use 'ubuntu-latest'
     steps:
-      - name: Echo the message
-        run: |
-          echo "Hola Equipo!"
-      - name: Dime la fecha
-        run: date
-      - run: ls -l
+      - name: Echo the message  # Name of the first step
+        run: |                  # print in the console 
+          echo "Hola Equipo!" 
+      - name: Dime la fecha     # Name of the 2nd step
+        run: date               # Display the current 
+                                # date on the console
+      - run: ls -l              # List files directories
+                                # in the execution
+                                # enviromentimage.png
