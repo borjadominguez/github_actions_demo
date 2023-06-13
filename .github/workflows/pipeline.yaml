@@ -16,5 +16,5 @@ jobs:
                 node-version: 18
             - name: Install dependencies
               run: npm install
-            - name: Lint
+            - name: Lint # Linteo del código
               run: npm run eslint
